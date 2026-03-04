@@ -1,0 +1,50 @@
+<project outputDir="C:\MeuGitHub\CrudGenerator\app\CrudGenerator.App.Wpf\bin\Release\net462\Confused" baseDir="C:\MeuGitHub\CrudGenerator\app\CrudGenerator.App.Wpf\bin\Release\net462" xmlns="http://confuser.codeplex.com">
+  <rule pattern="true" preset="maximum">
+    <protection id="anti debug" action="remove" />
+    <protection id="anti dump" action="remove" />
+    <protection id="anti ildasm" />
+    <protection id="anti tamper" action="remove" />
+    <protection id="constants" action="remove" />
+    <protection id="ctrl flow" />
+	<protection id="harden" />
+    <protection id="invalid metadata" action="remove" />
+    <protection id="ref proxy" />
+    <protection id="resources" action="remove" />
+	<protection id="typescramble" action="remove" />
+    <protection id="rename" action="remove" />
+	<protection id="watermark" />
+  </rule>
+  <module path="CrudGenerator.App.Wpf.exe" />
+  <module path="CrudGenerator.Core.Wpf.dll" />
+  <module path="CrudGenerator.Core.dll" />
+  <module path="Database.dll" />
+  <module path="Database.MySql.dll" />
+  <module path="Database.PostgreSql.dll" />
+  <module path="Database.Sqlite.dll" />
+  <module path="Database.SqlServer.dll" />
+  <module path="DependencyInversion.dll" />
+  <module path="Framework.dll" />
+  <module path="Serialization.dll" />
+  <module path="Serialization.BinarySlim.dll" />
+  <module path="Serialization.Json.dll" />
+  <module path="Domain.Model.dll" />
+  <module path="Domain.Application.dll" />
+  <module path="Domain.Database.dll" />
+  <module path="Domain.Infrastructure.dll" />
+  <module path="View.Abstractions.dll" />
+  <module path="View.Abstractions.Wpf.dll" />
+  <module path="View.Components.dll" />
+  <module path="View.Components.Wpf.dll" />
+  <module path="View.Database.dll" />
+  <module path="View.Database.Wpf.dll" />
+  <module path="Crud.Abstractions.Application.dll" />
+  <module path="Crud.Abstractions.Presentation.dll" />
+  <module path="Crud.Abstractions.Presentation.Wpf.Components.dll" />
+  <module path="Crud.Abstractions.Presentation.Wpf.Views.dll" />
+  <module path="Xceed.Wpf.AvalonDock.dll" />
+  <module path="Xceed.Wpf.AvalonDock.Themes.Aero.dll" />
+  <module path="Xceed.Wpf.AvalonDock.Themes.Expression.dll" />
+  <module path="Xceed.Wpf.AvalonDock.Themes.Metro.dll" />
+  <module path="Xceed.Wpf.AvalonDock.Themes.VS2010.dll" />
+  <module path="Xceed.Wpf.Toolkit.dll" />
+</project>

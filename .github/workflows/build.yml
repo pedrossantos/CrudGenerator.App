@@ -1,0 +1,66 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'app/**'
+      - 'CrudGenerator/**'
+      - '.github/workflows/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'app/**'
+      - 'CrudGenerator/**'
+      - '.github/workflows/**'
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4 # Action to check out your repository code
+      with:
+        submodules: 'recursive'
+        fetch-depth: 0 # Fetch all history
+        token: ${{ secrets.BUILD }}
+        
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4 # Action to install a specific .NET version
+      with:
+        dotnet-version: '8.0.x' # Specify the desired .NET version
+        
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
+      
+    - name: Build View.Components net6.0 (windows)
+      run: |
+        dotnet build app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj --framework net6.0-windows --configuration Release
+     
+    - name: Build View.Components net8.0 (windows)
+      run: |
+        dotnet build app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj --framework net8.0-windows --configuration Release
+     
+    - name: Build View.Components net9.0 (windows)
+      run: |
+        dotnet build app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj --framework net9.0-windows --configuration Release
+      
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+
+    - name: Restore NuGet Packages
+      run: nuget restore CrudGenerator.sln
+          
+    - name: Build  View.Database.Wpf net461
+      run: |
+        msbuild app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj /p:Platform=AnyCPU /p:TargetFramework=net461
+      env:
+        Configuration: Release
+        
+    - name: Build  View.Database.Wpf net462
+      run: |
+        msbuild app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj /p:Platform=AnyCPU /p:TargetFramework=net462
+      env:
+        Configuration: Release

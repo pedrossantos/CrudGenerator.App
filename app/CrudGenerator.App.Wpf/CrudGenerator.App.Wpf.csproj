@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworks>net461;net462;net6.0-windows;net8.0-windows;net9.0-windows</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="8.0.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+    <PackageReference Include="MySql.Data" Version="8.0.32.1" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' != 'net461' ">
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+  </ItemGroup>
+    
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Expression\Xceed.Wpf.AvalonDock.Themes.Expression.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\src\CrudGenerator.Core.Wpf\CrudGenerator.Core.Wpf.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\src\CrudGenerator.Core\CrudGenerator.Core.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\src\Wpf\Crud.Abstractions.Presentation.Wpf.View\Crud.Abstractions.Presentation.Wpf.Views.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\Domain\Serialization\src\Serialization.BinarySlim\Serialization.BinarySlim.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\Domain\Serialization\src\Serialization.Json\Serialization.Json.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\Domain\src\Domain.Infrastructure\Domain.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Aero\Xceed.Wpf.AvalonDock.Themes.Aero.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Metro\Xceed.Wpf.AvalonDock.Themes.Metro.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.VS2010\Xceed.Wpf.AvalonDock.Themes.VS2010.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock\Xceed.Wpf.AvalonDock.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.Toolkit\Xceed.Wpf.Toolkit.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Messages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Messages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
