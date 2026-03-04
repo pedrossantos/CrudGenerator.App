@@ -51,7 +51,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1.1
 
     - name: Restore NuGet Packages
-      run: nuget restore CrudGenerator.sln
+      run: nuget restore CrudGenerator.App.sln
           
     - name: Build  View.Database.Wpf net461
       run: |
