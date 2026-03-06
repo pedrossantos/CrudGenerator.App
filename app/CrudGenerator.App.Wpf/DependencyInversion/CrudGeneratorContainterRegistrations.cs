@@ -10,6 +10,11 @@ using DependencyInversion;
 using Framework;
 using View.Abstractions.IO;
 using View.Abstractions.Wpf;
+#if NETSTANDARD2_0 || NETSTANDARD2_1 || NET461 || NET462
+using System.Data.SqlClient;
+#else
+using Microsoft.Data.SqlClient;
+#endif
 
 namespace CrudGenerator.App.Wpf.DependencyInversion
 {
@@ -37,14 +42,18 @@ namespace CrudGenerator.App.Wpf.DependencyInversion
                 IApplicationMetadata applicationMetadata = container.Resolve<IApplicationMetadata>();
                 IApplicationPaths applicationPaths = container.Resolve<IApplicationPaths>();
                 EnvironmentBasedSqliteFilePath filePath = new EnvironmentBasedSqliteFilePath("teste.db3", applicationPaths.ApplicationData);
+#if NETSTANDARD2_0 || NETSTANDARD2_1 || NET461 || NET462
                 return new System.Data.SQLite.SQLiteConnectionStringBuilder($"Data Source={filePath.FullPath};Version=3;DateTimeFormat=Ticks;foreign keys=false;");
+#elif NET8_0 || NET9_0
+                return new Microsoft.Data.Sqlite.SqliteConnectionStringBuilder($"Data Source={filePath.FullPath};foreign keys=false;");
+#endif
             });
 
             yield return CreateSingleton(container => new Npgsql.NpgsqlConnectionStringBuilder("server=localhost;user id=teste;password=teste;CommandTimeout=3600;Timeout=120;Pooling=True;") { Database = "testedatabaselocal" });
 
             yield return CreateSingleton(container =>
             {
-                return new System.Data.SqlClient.SqlConnectionStringBuilder("Server=tcp:localhost,1433;Initial Catalog=TesteDatabaseLocal")
+                return new SqlConnectionStringBuilder("Server=tcp:localhost,1433;Initial Catalog=TesteDatabaseLocal")
                 {
                     UserID = "teste",
                     Password = "teste",
