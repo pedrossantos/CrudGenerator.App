@@ -1,0 +1,38 @@
+﻿<Project Sdk="WixToolset.Sdk/6.0.2">
+  <PropertyGroup>
+    <OutputName>CrudGenerator</OutputName>
+    <Name>CrudGenerator.App.Wpf.WixInstaller.net9.0-windows</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DefineConstants>Debug</DefineConstants>
+    <Cultures>pt-BR</Cultures>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>$(SolutionDir)installer\net9.0\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="BannerTop.bmp" />
+    <Content Include="CrudGeneratorLicense-enUS.rtf" />
+    <Content Include="CrudGeneratorLicense-ptBR.rtf" />
+    <Content Include="Dialog.bmp" />
+    <Content Include="index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wpf.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomDialogs\" />
+    <Folder Include="Language\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="WixToolset.Util.wixext" Version="6.0.2" />
+    <PackageReference Include="WixToolset.UI.wixext" Version="6.0.2" />
+    <PackageReference Include="WixToolset.NetFx.wixext" Version="6.0.2" />
+  </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="$(SolutionDir)ConfuserEx_bin\Confuser.CLI.exe $(SolutionDir)ConfuserEx.CrudGenerator.App.Wpf.net9.0.crproj" />
+  </Target>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /y &quot;$(ProjectDir)index.html&quot; &quot;$(SolutionDir)installer\net9.0\&quot;" />
+  </Target>
+</Project>

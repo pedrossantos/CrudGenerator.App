@@ -25,9 +25,10 @@
   <!--<?define UpgradeCode="87EE263C-5DB9-49CE-B28B-102DF058483F" ?>-->  <!--v1.1.2.9-->
   <!--<?define UpgradeCode="CFA638E5-6045-413D-96C5-EDF00D7244C1" ?>-->  <!--v1.1.2.10-->
   <!--<?define UpgradeCode="9209D29E-C87F-4D88-82E7-B20B8E974BE0" ?>-->  <!--v1.1.2.11-->
-  <?define UpgradeCode="1EEF7B40-479B-40A6-B069-0AD37F083A14" ?>  <!--v1.1.2.12-->
+  <!--<?define UpgradeCode="1EEF7B40-479B-40A6-B069-0AD37F083A14" ?>-->  <!--v1.1.2.12-->
+  <?define UpgradeCode="8D6F5217-0628-4B54-80E7-87A71B7F1768" ?>  <!--v1.1.2.13-->
 
-  <Product Id="35CE40BF-2F47-409E-BA49-4757F6A3F1DA" Name="!(loc.ApplicationName)" Language="!(loc.Language)" Version="1.1.2.12" Manufacturer="!(loc.ManufacturerFullName)" UpgradeCode="$(var.UpgradeCode)">
+  <Product Id="35CE40BF-2F47-409E-BA49-4757F6A3F1DA" Name="!(loc.ApplicationName)" Language="!(loc.Language)" Version="1.1.2.13" Manufacturer="!(loc.ManufacturerFullName)" UpgradeCode="$(var.UpgradeCode)">
 	<Package Id="30EE239D-F5EA-4630-90CB-22AE1F31DCC4" InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Description="!(loc.ProductDescription)"/>
 
     <!--<WixVariable Id="WixUILicenseRtf" Value="!(loc.LicenseRtf)" />-->
@@ -152,16 +153,12 @@
           <Component Id="ProductComponents" Guid="F10443EE-5385-4240-890F-847E0992C592" KeyPath="yes">
             <File Id="BouncyCastle.Crypto" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\BouncyCastle.Crypto.dll"/>
             <File Id="BouncyCastle.Cryptography" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\BouncyCastle.Cryptography.dll"/>
-            <File Id="EntityFramework" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\EntityFramework.dll"/>
-            <File Id="EntityFramework.SqlServer" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\EntityFramework.SqlServer.dll"/>
             <File Id="Google.Protobuf" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\Google.Protobuf.dll"/>
             <File Id="K4os.Compression.LZ4" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\K4os.Compression.LZ4.dll"/>
             <File Id="K4os.Compression.LZ4.Streams" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\K4os.Compression.LZ4.Streams.dll"/>
             <File Id="K4os.Hash.xxHash" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\K4os.Hash.xxHash.dll"/>
             <File Id="Microsoft.Bcl.AsyncInterfaces" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\Microsoft.Bcl.AsyncInterfaces.dll"/>
             <File Id="Microsoft.Bcl.HashCode" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\Microsoft.Bcl.HashCode.dll"/>
-            <File Id="Microsoft.Extensions.DependencyInjection.Abstractions" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
-            <File Id="Microsoft.Extensions.Logging.Abstractions" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\Microsoft.Extensions.Logging.Abstractions.dll"/>
             <File Id="Microsoft.Win32.Primitives" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\Microsoft.Win32.Primitives.dll"/>
             <File Id="MySql.Data" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\MySql.Data.dll"/>
             <File Id="netstandard" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\netstandard.dll"/>
@@ -181,8 +178,6 @@
             <File Id="System.Data.Common" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\System.Data.Common.dll"/>
             <File Id="System.Data.SqlClient" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\System.Data.SqlClient.dll"/>
             <File Id="System.Data.SQLite" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\System.Data.SQLite.dll"/>
-            <File Id="System.Data.SQLite.EF6" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\System.Data.SQLite.EF6.dll"/>
-            <File Id="System.Data.SQLite.Linq" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\System.Data.SQLite.Linq.dll"/>
             <File Id="System.Diagnostics.Contracts" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\System.Diagnostics.Contracts.dll"/>
             <File Id="System.Diagnostics.Debug" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\System.Diagnostics.Debug.dll"/>
             <File Id="System.Diagnostics.DiagnosticSource" Source="..\CrudGenerator.App.Wpf\bin\Release\net461\System.Diagnostics.DiagnosticSource.dll"/>
