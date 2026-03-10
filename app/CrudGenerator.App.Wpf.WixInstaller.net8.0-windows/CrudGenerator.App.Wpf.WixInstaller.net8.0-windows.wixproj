@@ -17,7 +17,7 @@
     <Cultures>pt-BR</Cultures>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <OutputPath>$(SolutionDir)installer\net8.0\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
@@ -36,6 +36,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BannerTop.bmp" />
+    <Content Include="CrudGeneratorLicense-enUS.rtf" />
+    <Content Include="CrudGeneratorLicense-ptBR.rtf" />
     <Content Include="Dialog.bmp" />
     <Content Include="index.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -70,10 +72,10 @@
     <Error Text="The WiX Toolset v3.11 (or newer) build tools must be installed to build this project. To download the WiX Toolset, see http://wixtoolset.org/releases/" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y "$(ProjectDir)index.html" "$(ProjectDir)bin/$(ConfigurationName)"</PostBuildEvent>
+    <PostBuildEvent>xcopy /y "$(ProjectDir)index.html" "$(SolutionDir)installer\net8.0\"</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PreBuildEvent>$(SolutionDir)..\ConfuserEx-CLI\Confuser.CLI.exe $(SolutionDir)CrudGenerator.App.Wpf.WixInstaller.net6.0-windows.crproj</PreBuildEvent>
+    <PreBuildEvent>$(SolutionDir)ConfuserEx_bin\Confuser.CLI.exe $(SolutionDir)ConfuserEx.CrudGenerator.App.Wpf.net8.0.crproj</PreBuildEvent>
   </PropertyGroup>
   <!--
 	To modify your build process, add your task inside one of the targets below and uncomment it.

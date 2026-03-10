@@ -126,6 +126,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crud.Abstractions.Presentat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xceed.Wpf.AvalonDock.Themes.Expression", "..\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Expression\Xceed.Wpf.AvalonDock.Themes.Expression.csproj", "{6FDBF530-BEB1-F99F-F5FA-360F618D985C}"
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "CrudGenerator.App.Wpf.WixInstaller.net8.0-windows", "app\CrudGenerator.App.Wpf.WixInstaller.net8.0-windows\CrudGenerator.App.Wpf.WixInstaller.net8.0-windows.wixproj", "{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7627FCCB-4565-4018-AF36-B02F56291F11} = {7627FCCB-4565-4018-AF36-B02F56291F11}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -722,6 +727,18 @@ Global
 		{6FDBF530-BEB1-F99F-F5FA-360F618D985C}.Release|x64.Build.0 = Release|Any CPU
 		{6FDBF530-BEB1-F99F-F5FA-360F618D985C}.Release|x86.ActiveCfg = Release|Any CPU
 		{6FDBF530-BEB1-F99F-F5FA-360F618D985C}.Release|x86.Build.0 = Release|Any CPU
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}.Debug|Any CPU.Build.0 = Debug|x86
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}.Debug|x64.ActiveCfg = Debug|x86
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}.Debug|x64.Build.0 = Debug|x86
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}.Debug|x86.ActiveCfg = Debug|x86
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}.Debug|x86.Build.0 = Debug|x86
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}.Release|Any CPU.ActiveCfg = Release|x86
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}.Release|Any CPU.Build.0 = Release|x86
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}.Release|x64.ActiveCfg = Release|x86
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}.Release|x64.Build.0 = Release|x86
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}.Release|x86.ActiveCfg = Release|x86
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -784,6 +801,7 @@ Global
 		{93FF14A1-6AC7-6CBE-42DE-889A17A7A9B3} = {F7667C6D-3111-4ECB-B40E-709767710919}
 		{7F042FCC-2C2E-3BE5-6AFC-620DC01DE84B} = {F7667C6D-3111-4ECB-B40E-709767710919}
 		{6FDBF530-BEB1-F99F-F5FA-360F618D985C} = {5A307E2C-93FE-4A8F-8252-90BD6DB34511}
+		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5} = {A215DB22-0E27-4375-9C69-D778C515EB50}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64FAF583-7900-44F0-8450-B0B15CE21677}
