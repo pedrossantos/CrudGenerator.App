@@ -1,3 +1,6 @@
 [submodule "CrudGenerator"]
 	path = CrudGenerator
 	url = https://github.com/pedrossantos/CrudGenerator.git
+[submodule "ConfuserEx_bin"]
+	path = ConfuserEx_bin
+	url = https://github.com/pedrossantos/ConfuserEx_bin.git
