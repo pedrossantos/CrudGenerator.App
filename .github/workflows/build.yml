@@ -28,6 +28,9 @@ jobs:
         fetch-depth: 0 # Fetch all history
         token: ${{ secrets.BUILD }}
         
+    - name: Set SolutionDir Env Variable
+      run: echo "SolutionDir=$GITHUB_WORKSPACE/" >> $GITHUB_ENV
+        
     - name: Setup .NET
       uses: actions/setup-dotnet@v4 # Action to install a specific .NET version
       with:
@@ -55,18 +58,18 @@ jobs:
 
     - name: Build WixInstaller.net8.0
       run: |
-        msbuild app/CrudGenerator.App.Wpf.WixInstaller.net8.0-windows\CrudGenerator.App.Wpf.WixInstaller.net8.0-windows.wixproj /p:Platform=x64
+        msbuild app/CrudGenerator.App.Wpf.WixInstaller.net8.0-windows\CrudGenerator.App.Wpf.WixInstaller.net8.0-windows.wixproj /p:Platform=x64 /p:SolutionDir="$(SolutionDir)"
       env:
         Configuration: Release
 
     - name: Build WixInstaller.net9.0
       run: |
-        msbuild app/CrudGenerator.App.Wpf.WixInstaller.net9.0-windows\CrudGenerator.App.Wpf.WixInstaller.net9.0-windows.wixproj /p:Platform=x64
+        msbuild app/CrudGenerator.App.Wpf.WixInstaller.net9.0-windows\CrudGenerator.App.Wpf.WixInstaller.net9.0-windows.wixproj /p:Platform=x64 /p:SolutionDir="$(SolutionDir)"
       env:
         Configuration: Release
 
     - name: Build WixInstaller.net462
       run: |
-        msbuild app/CrudGenerator.App.Wpf.WixInstaller.net462\CrudGenerator.App.Wpf.WixInstaller.net462.wixproj /p:Platform=x86
+        msbuild app/CrudGenerator.App.Wpf.WixInstaller.net462\CrudGenerator.App.Wpf.WixInstaller.net462.wixproj /p:Platform=x86 /p:SolutionDir="$(SolutionDir)"
       env:
         Configuration: Release
