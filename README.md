@@ -17,13 +17,13 @@ Também foram desenvolvidos instaladores (pt-BR e en-US) para disponibilizar a a
 Caso queira saber mais sobre o Framework e esta solução, ou queira colaborar indicando ocorrência de bugs, entre em contato através do e-mail *ss.pedrohenrique@gmail.com*.
 
 Após instalar e realizar a geração de um projeto à partir do **CrudGenerator** no *Windows 10*, basta seguir os passos abaixo para compilar e executar o projeto gerado:
- - Método 2:
+ - Método 1:
    - Passo 1: Faça o download do **.NET 9.0 SDK** em *https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-9.0.311-windows-x64-installer* e faça a instalação do SKD;
    - Passo 2:
      - Opção 1: apósfinalizar a instalação de **.NET 9.0 SDK** instalado, abra o **Command Prompt do Windows**, navegue até a pasta selecionada para a geração do projeto CRUD via **CrudGenerator** e execute **BuildAndRun.bat**; isto fará com que seja realizado o restore das depenências, compilação e execução do projeto **CRUD**. **OU**
      - Opção 2: abra o **Windows PowerShell**, navegue até a pasta selecionada para a geração do projeto CRUD via **CrudGenerator** e execute o comando **./BuildAndRun.bat**; isto fará com que seja realizado o restore das depenências, compilação e execução do projeto **CRUD**.
 
- - Método 1:
+ - Método 2:
    - Passo 1: faça o download do script de instalação do **.NET SDK para Windows** em *https://dot.net/v1/dotnet-install.ps1*; (Fonte: https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script)
    - Passo 2: abra o **Windows PowerShell**, navegue até a pasta na qual *dotnet-install.ps1* foi salvo e execute o comando "*./dotnet-install.ps1 -Channel LTS*" para que a última versão LTS do .NET SDK seja instalado;
      - Em caso de erro "UnauthorizedAccess: O arquivo *...\dotnet-install.ps1* não pode ser carregado porque a execução de scripts foi desabilitada neste sistema", abra o **Windows PowerShell** com permissão de *Administrador*, execute o comando "*Set-ExecutionPolicy Unrestricted*" para que seja habilitada a execução de scripts via **Windows PowerShell**; reinicie o Windows e execute novamente o passo anterior;
