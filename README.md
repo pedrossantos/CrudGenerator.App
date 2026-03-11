@@ -13,10 +13,10 @@ Atualmente, o ORM desenvolvido dá suporte para leitura de definições de um de
 Hoje, há suporte para bancos de dados **Sqlite**, **SqlServer**, **PostgreSql** e **Mysql**. Suporte para os bancos de dados **Oracle**, **Firebird** e **MariaDB** estão em desenvolvimento.
 Para verificar uma desmonstração de utilização, com banco de dados **MySql**, veja *CrudGenerator_Demonstração.gif* (ainda não atualizado com desmonstação da geração da solução completa).
 
-Também foram desenvolvidos instaladores (pt-BR e en-US) para disponibilizar a aplicação para quem se interessar em conhecê-la. Para instaladores, acesse as pastas "installer/net461" (*compatível com Windows 7*) ou "installer/net462".
+Também foram desenvolvidos instaladores (pt-BR e en-US) para disponibilizar a aplicação para quem se interessar em conhecê-la. Para instaladores, acesse as pastas "installer/net461" (*compatível com Windows 7*), "installer/net462", "installer/net8.0" ou "installer/net9.0".
 Caso queira saber mais sobre o Framework e esta solução, ou queira colaborar indicando ocorrência de bugs, entre em contato através do e-mail *ss.pedrohenrique@gmail.com*.
 
-Após instalar e realizar a geração de um projeto à partir do **CrudGenerator**, basta seguir os passos abaixo para compilar e executar o projeto gerado:
+Após instalar e realizar a geração de um projeto à partir do **CrudGenerator** no *Windows 10*, basta seguir os passos abaixo para compilar e executar o projeto gerado:
  - Método 1:
    - Passo 1: faça o download do script de instalação do **.NET SDK para Windows** em *https://dot.net/v1/dotnet-install.ps1*; (Fonte: https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script)
    - Passo 2: abra o **Windows PowerShell**, navegue até a pasta na qual *dotnet-install.ps1* foi salvo e execute o comando "*./dotnet-install.ps1 -Channel LTS*" para que a última versão LTS do .NET SDK seja instalado;
