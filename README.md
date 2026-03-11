@@ -1,6 +1,6 @@
 # CrudGenerator
 
-## Projeto desenvolvido por Pedro Henrique da Silva Santos, com intuíto de divulgação de seus conhecimentos técnicos aplicados no desenvolvimento desta solução.
+## Projeto desenvolvido por Pedro Henrique da Silva Santos, com intuíto de divulgação de meus conhecimentos técnicos aplicados no desenvolvimento desta solução.
 
 
 **CrudGenerator** é um aplicativo desenvolvido utilizando vários conceitos de boas práticas, utilizando tecnologias .NET (Framework, Standard e Core) e **Code Obfuscation**.
