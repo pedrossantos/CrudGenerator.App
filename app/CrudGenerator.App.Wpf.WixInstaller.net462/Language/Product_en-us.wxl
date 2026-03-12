@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<WixLocalization Culture="en-us" Codepage="1252" xmlns="http://schemas.microsoft.com/wix/2006/localization">
-  <String Id="Language">1033</String>
-  <String Id="ApplicationName">Crud Generator (.NET Framerowk 4.6.2)</String>
-  <String Id="ManufacturerName">Pedro Henrique da Silva Santos</String>
-  <String Id="ManufacturerFullName">Pedro Henrique da Silva Santos</String>
-  <String Id="ProductDescription">Integrated Field Management</String>
-  <String Id="Comments">Installs Crud Generator</String>
-  <String Id="DowngradeError">A newer version of Crud Generator is already installed.</String>
-  <String Id="RequiresDotNetFramework462">Crud Generator requires .NET Framework 4.6.2. Please install the .NET Framework then run this installer again.</String>
-  <String Id="LicenseRtf">CrudGeneratorLicense-enUS.rtf</String>
+﻿<WixLocalization Culture="en-us" Codepage="1252" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Id="Language" Value="1033" />
+  <String Id="ApplicationName" Value="Crud Generator (.NET Framerowk 4.6.2)" />
+  <String Id="ManufacturerName" Value="Pedro Henrique da Silva Santos" />
+  <String Id="ManufacturerFullName" Value="Pedro Henrique da Silva Santos" />
+  <String Id="ProductDescription" Value="Integrated Field Management" />
+  <String Id="Comments" Value="Installs Crud Generator" />
+  <String Id="DowngradeError" Value="A newer version of Crud Generator is already installed." />
+  <String Id="RequiresDotNetFramework462" Value="Crud Generator requires .NET Framework 4.6.2. Please install the .NET Framework then run this installer again." />
+  <String Id="LicenseRtf" Value="CrudGeneratorLicense-enUS.rtf" />
 </WixLocalization>
