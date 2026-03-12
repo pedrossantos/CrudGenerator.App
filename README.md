@@ -20,7 +20,7 @@ Após instalar e realizar a geração de um projeto à partir do **CrudGenerator
  - Método 1:
    - Passo 1: Faça o download do **.NET 9.0 SDK** em *https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-9.0.311-windows-x64-installer* e faça a instalação do SKD;
    - Passo 2:
-     - Opção 1: apósfinalizar a instalação de **.NET 9.0 SDK** instalado, abra o **Command Prompt do Windows**, navegue até a pasta selecionada para a geração do projeto CRUD via **CrudGenerator** e execute **BuildAndRun.bat**; isto fará com que seja realizado o restore das depenências, compilação e execução do projeto **CRUD**. **OU**
+     - Opção 1: apósfinalizar a instalação de **.NET 9.0 SDK** instalado, abra o **Command Prompt do Windows**, navegue até a pasta selecionada para a geração do projeto CRUD via **CrudGenerator** e execute **BuildAndRun.bat**; isto fará com que seja realizado o restore das depenências, compilação e execução do projeto **CRUD**;
      - Opção 2: abra o **Windows PowerShell**, navegue até a pasta selecionada para a geração do projeto CRUD via **CrudGenerator** e execute o comando **./BuildAndRun.bat**; isto fará com que seja realizado o restore das depenências, compilação e execução do projeto **CRUD**.
 
  - Método 2:
