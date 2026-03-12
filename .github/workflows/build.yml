@@ -55,7 +55,7 @@ jobs:
         
     - name: Build WixInstaller.net8.0
       run: |
-        msbuild /t:restore CrudGenerator.App.Wpf.WixInstaller.net8.0-windows.wixproj
+        msbuild /t:restore app/CrudGenerator.App.Wpf.WixInstaller.net8.0-windows/CrudGenerator.App.Wpf.WixInstaller.net8.0-windows.wixproj
         msbuild app/CrudGenerator.App.Wpf.WixInstaller.net8.0-windows/CrudGenerator.App.Wpf.WixInstaller.net8.0-windows.wixproj /p:Platform=x64
       env:
         Configuration: Release
