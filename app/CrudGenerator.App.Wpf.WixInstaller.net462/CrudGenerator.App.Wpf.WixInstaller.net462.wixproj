@@ -30,7 +30,7 @@
     <PackageReference Include="WixToolset.NetFx.wixext" Version="6.0.2" />
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="IF NOT EXIST &quot;$(SolutionDir)app\CrudGenerator.App.Wpf\bin\Release\net462\Confused\CrudGenerator.App.Wpf.exe&quot; (&#xA;  dotnet build $(SolutionDir)app\CrudGenerator.App.Wpf\CrudGenerator.App.Wpf.csproj --framework net462 --configuration Release&#xA;)&#xA;&#xA;$(SolutionDir)ConfuserEx_bin\Confuser.CLI.exe $(SolutionDir)ConfuserEx.CrudGenerator.App.Wpf.net462.crproj" />
+    <Exec Command="IF NOT EXIST &quot;$(SolutionDir)app\CrudGenerator.App.Wpf\bin\Release\net462\Confused\CrudGenerator.App.Wpf.exe&quot; (&#xA;  msbuild $(SolutionDir)app\CrudGenerator.App.Wpf\CrudGenerator.App.Wpf.csproj /p:TargetFramework=net462 /p:Configuration:Release&#xD;&#xA;&#xA;)&#xA;&#xA;$(SolutionDir)ConfuserEx_bin\Confuser.CLI.exe $(SolutionDir)ConfuserEx.CrudGenerator.App.Wpf.net462.crproj" />
   </Target>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="xcopy /y &quot;$(ProjectDir)index.html&quot; &quot;$(SolutionDir)installer\net462\&quot;" />
