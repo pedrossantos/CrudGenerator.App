@@ -28,30 +28,30 @@ jobs:
         fetch-depth: 0 # Fetch all history
         token: ${{ secrets.BUILD }}
         
-    # - name: Setup .NET
-      # uses: actions/setup-dotnet@v4 # Action to install a specific .NET version
-      # with:
-        # dotnet-version: '8.0.x' # Specify the desired .NET version
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4 # Action to install a specific .NET version
+      with:
+        dotnet-version: '8.0.x' # Specify the desired .NET version
         
-    # - name: Setup NuGet
-      # uses: NuGet/setup-nuget@v2
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
      
-    # - name: Build CrudGenerator.App.Wpf net8.0 (windows)
-      # run: |
-        # dotnet build app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj --framework net8.0-windows --configuration Release
+    - name: Build CrudGenerator.App.Wpf net8.0 (windows)
+      run: |
+        dotnet build app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj --framework net8.0-windows --configuration Release
      
-    # - name: Build CrudGenerator.App.Wpf net9.0 (windows)
-      # run: |
-        # dotnet build app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj --framework net9.0-windows --configuration Release
+    #- name: Build CrudGenerator.App.Wpf net9.0 (windows)
+    #  run: |
+    #    dotnet build app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj --framework net9.0-windows --configuration Release
       
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.1
 
-    # - name: Build CrudGenerator.App.Wpf net462
-      # run: |
-        # msbuild app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj /p:Platform=AnyCPU /p:TargetFramework=net462
-      # env:
-        # Configuration: Release
+    #- name: Build CrudGenerator.App.Wpf net462
+    #  run: |
+    #    msbuild app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj /p:Platform=AnyCPU /p:TargetFramework=net462
+    #  env:
+    #    Configuration: Release
         
     - name: Build WixInstaller.net8.0
       run: |
