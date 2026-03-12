@@ -1,4 +1,4 @@
-<project outputDir="C:\MeuGitHub\CrudGenerator.App\app\CrudGenerator.App.Wpf\bin\Release\net461\Confused" baseDir="C:\MeuGitHub\CrudGenerator.App\app\CrudGenerator.App.Wpf\bin\Release\net461" xmlns="http://confuser.codeplex.com">
+<project outputDir="Confused" baseDir=".\app\CrudGenerator.App.Wpf\bin\Release\net461" xmlns="http://confuser.codeplex.com">
   <rule pattern="true" preset="maximum">
     <protection id="anti debug" action="remove" />
     <protection id="anti dump" action="remove" />

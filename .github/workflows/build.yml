@@ -36,9 +36,9 @@ jobs:
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v2
      
-    - name: Build CrudGenerator.App.Wpf net8.0 (windows)
-      run: |
-        dotnet build app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj --framework net8.0-windows --configuration Release
+    #- name: Build CrudGenerator.App.Wpf net8.0 (windows)
+    #  run: |
+    #    dotnet build app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj --framework net8.0-windows --configuration Release
      
     #- name: Build CrudGenerator.App.Wpf net9.0 (windows)
     #  run: |

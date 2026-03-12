@@ -30,7 +30,7 @@
     <PackageReference Include="WixToolset.NetFx.wixext" Version="6.0.2" />
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="$(SolutionDir)ConfuserEx_bin\Confuser.CLI.exe $(SolutionDir)ConfuserEx.CrudGenerator.App.Wpf.net9.0.crproj" />
+    <Exec Command="IF NOT EXIST &quot;$(ProjectDir)app\CrudGenerator.App.Wpf\bin\Release\net9.0-windows\Confused\CrudGenerator.App.Wpf.dll&quot; (&#xD;&#xA;  dotnet build $(SolutionDir)app\CrudGenerator.App.Wpf\CrudGenerator.App.Wpf.csproj --framework net9.0-windows --configuration Release&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;$(SolutionDir)ConfuserEx_bin\Confuser.CLI.exe $(SolutionDir)ConfuserEx.CrudGenerator.App.Wpf.net9.0.crproj" />
   </Target>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="xcopy /y &quot;$(ProjectDir)index.html&quot; &quot;$(SolutionDir)installer\net9.0\&quot;" />
