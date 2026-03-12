@@ -49,6 +49,7 @@ jobs:
 
     - name: Build CrudGenerator.App.Wpf net462
       run: |
+        msbuild /t:restore app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj
         msbuild app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj /p:Platform=AnyCPU /p:TargetFramework=net462
       env:
         Configuration: Release
