@@ -47,17 +47,19 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.1
 
-    - name: Build CrudGenerator.App.Wpf net462
+    #- name: Build CrudGenerator.App.Wpf net462
+    #  run: |
+    #    msbuild /t:restore app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj
+    #    msbuild app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj /p:Platform=AnyCPU /p:TargetFramework=net462
+    #  env:
+    #    Configuration: Release
+        
+    - name: Build CrudGenerator.App.Wpf net462/WixInstaller.net462
       run: |
         msbuild /t:restore app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj
         msbuild app/CrudGenerator.App.Wpf/CrudGenerator.App.Wpf.csproj /p:Platform=AnyCPU /p:TargetFramework=net462
-      env:
-        Configuration: Release
-        
-    - name: Build WixInstaller.net462
-      run: |
         msbuild /t:restore app/CrudGenerator.App.Wpf.WixInstaller.net462/CrudGenerator.App.Wpf.WixInstaller.net462.wixproj
-        msbuild app/CrudGenerator.App.Wpf.WixInstaller.net462/CrudGenerator.App.Wpf.WixInstaller.net462.wixproj /p:Platform=x64
+        msbuild app/CrudGenerator.App.Wpf.WixInstaller.net462/CrudGenerator.App.Wpf.WixInstaller.net462.wixproj /p:Platform=x86
       env:
         Configuration: Release
         SolutionDir: ${{ github.workspace }}\
