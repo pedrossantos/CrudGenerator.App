@@ -38,7 +38,6 @@
   </ItemGroup>
     
   <ItemGroup>
-    <ProjectReference Include="..\..\..\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Expression\Xceed.Wpf.AvalonDock.Themes.Expression.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\src\CrudGenerator.Core.Wpf\CrudGenerator.Core.Wpf.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\src\CrudGenerator.Core\CrudGenerator.Core.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\src\Wpf\Crud.Abstractions.Presentation.Wpf.View\Crud.Abstractions.Presentation.Wpf.Views.csproj" />
@@ -46,6 +45,7 @@
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\Domain\Serialization\src\Serialization.Json\Serialization.Json.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\Domain\src\Domain.Infrastructure\Domain.Infrastructure.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Aero\Xceed.Wpf.AvalonDock.Themes.Aero.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Expression\Xceed.Wpf.AvalonDock.Themes.Expression.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Metro\Xceed.Wpf.AvalonDock.Themes.Metro.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.VS2010\Xceed.Wpf.AvalonDock.Themes.VS2010.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock\Xceed.Wpf.AvalonDock.csproj" />
