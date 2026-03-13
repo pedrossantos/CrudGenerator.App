@@ -1,6 +1,6 @@
-CREATE DATABASE TesteDatabaseLocal;
+CREATE DATABASE TesteCrudGenerator;
 
-USE TesteDatabaseLocal;
+USE TesteCrudGenerator;
 GO
 
 DROP TABLE IF EXISTS dbo.Funcionario;
@@ -84,7 +84,7 @@ CREATE TABLE dbo.Funcionario
 
 	columnBinary BINARY DEFAULT(0x),
 	columnVarBinary VARBINARY DEFAULT(0x),
-	columnXml XML DEFAULT('A'),
+	columnXml XML DEFAULT('<TesteCrudGenerator><Versao>1.0.0.0</Versao></TesteCrudGenerator>'),
 
 	CONSTRAINT PK_FuncionarioId PRIMARY KEY CLUSTERED (id),
 	CONSTRAINT FK_CargoId FOREIGN KEY (idCargo,idEmpresa)

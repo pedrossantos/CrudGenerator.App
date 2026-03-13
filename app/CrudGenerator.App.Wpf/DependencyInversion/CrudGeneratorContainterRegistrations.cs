@@ -53,7 +53,7 @@ namespace CrudGenerator.App.Wpf.DependencyInversion
 
             yield return CreateSingleton(container =>
             {
-                return new SqlConnectionStringBuilder("Server=tcp:localhost,1433;Initial Catalog=TesteDatabaseLocal")
+                return new SqlConnectionStringBuilder("Server=localhost;Database=TesteDatabaseLocal")
                 {
                     UserID = "teste",
                     Password = "teste",
