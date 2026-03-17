@@ -33,10 +33,11 @@ Ao utilizar o **Método 2**, pode ser necessário sempre realizar a execução �
 Já para o **Método 1**, apenas uma das opções do **Passo 2** é necessária caso já tenha realizado a execução do **Passo 1** correspondente.
 
 **Versões das Bases de Dados utilizadas para testes:**
- - MySQL: 8.0.45
- - PostgreSQL: 18.1
- - SqlServer: 17.0.1000.7
- - Sqlite (DB Browser for SQLite): 3.13.1 (link para DB Browser for SQlite "*https://sqlitebrowser.org/*")
+ - **MySQL**: 8.0.45
+ - **PostgreSQL**: 18.1
+ - **SqlServer**: 17.0.1000.7
+ - **Sqlite** (DB Browser for SQLite): 3.13.1
+   - Link para DB Browser for SQlite "*https://sqlitebrowser.org/*"
 
 
 Obrigado!
