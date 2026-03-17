@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS TesteTableOrders;
-CREATE DATABASE TesteTableOrders;
+DROP DATABASE IF EXISTS TesteCrudGeneratorOrders;
+CREATE DATABASE TesteCrudGeneratorOrders;
 
-USE TesteTableOrders;
+USE TesteCrudGeneratorOrders;
 DROP TABLE IF EXISTS Tabela1;
 DROP TABLE IF EXISTS Tabela11;
 DROP TABLE IF EXISTS Tabela12;

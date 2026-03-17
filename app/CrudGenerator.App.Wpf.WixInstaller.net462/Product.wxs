@@ -1,7 +1,7 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
 
   <!-- The URL for add/remove programs -->
-  <?define InfoURL="https://github.com/pedrossantos/CrudGenerator" ?>
+  <?define InfoURL="https://github.com/pedrossantos/CrudGenerator.App" ?>
 
   <!--
    Upgrade code HAS to be the same for all updates.
@@ -24,9 +24,10 @@
   <!--<?define UpgradeCode="9209D29E-C87F-4D88-82E7-B20B8E974BE0" ?>-->  <!--v1.1.2.11-->
   <!--<?define UpgradeCode="1EEF7B40-479B-40A6-B069-0AD37F083A14" ?>-->  <!--v1.1.2.12-->
   <!--<?define UpgradeCode="8D6F5217-0628-4B54-80E7-87A71B7F1768" ?>-->  <!--v1.1.2.13-->
-  <?define UpgradeCode="42B4B41C-345F-4787-92C6-314B52FF7416" ?>  <!--v1.1.2.14-->
+  <!--<?define UpgradeCode="42B4B41C-345F-4787-92C6-314B52FF7416" ?>-->  <!--v1.1.2.14-->
+  <?define UpgradeCode="BC8C08B4-AB6A-479F-B649-C01382A7C89B" ?>  <!--v1.1.2.15-->
 
-  <Package Name="!(loc.ApplicationName)" Language="!(loc.Language)" Version="1.1.2.14" Manufacturer="!(loc.ManufacturerFullName)" UpgradeCode="$(var.UpgradeCode)" InstallerVersion="200" ProductCode="35CE40BF-2F47-409E-BA49-4757F6A3F1DA"><SummaryInformation Description="!(loc.ProductDescription)" />
+  <Package Name="!(loc.ApplicationName)" Language="!(loc.Language)" Version="1.1.2.15" Manufacturer="!(loc.ManufacturerFullName)" UpgradeCode="$(var.UpgradeCode)" InstallerVersion="200" ProductCode="35CE40BF-2F47-409E-BA49-4757F6A3F1DA"><SummaryInformation Description="!(loc.ProductDescription)" />
 
     <!--<WixVariable Id="WixUILicenseRtf" Value="!(loc.LicenseRtf)" />-->
 
@@ -178,6 +179,7 @@
           <File Id="Microsoft.Win32.Primitives" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Microsoft.Win32.Primitives.dll" />
           <File Id="MySql.Data" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\MySql.Data.dll" />
           <File Id="netstandard" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\netstandard.dll" />
+          <File Id="Newtonsoft.Json" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Newtonsoft.Json.dll" />
           <File Id="Npgsql" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Npgsql.dll" />
           <File Id="System.AppContext" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\System.AppContext.dll" />
           <File Id="System.Buffers" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\System.Buffers.dll" />
@@ -186,6 +188,7 @@
           <File Id="System.Collections.Immutable" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\System.Collections.Immutable.dll" />
           <File Id="System.Collections.NonGeneric" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\System.Collections.NonGeneric.dll" />
           <File Id="System.Collections.Specialized" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\System.Collections.Specialized.dll" />
+          <File Id="System.ComponentModel.Annotations" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\System.ComponentModel.Annotations.dll" />
           <File Id="System.ComponentModel" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\System.ComponentModel.dll" />
           <File Id="System.ComponentModel.EventBasedAsync" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\System.ComponentModel.EventBasedAsync.dll" />
           <File Id="System.ComponentModel.Primitives" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\System.ComponentModel.Primitives.dll" />

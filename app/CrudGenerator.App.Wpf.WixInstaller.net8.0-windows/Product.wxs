@@ -24,9 +24,10 @@
   <!--<?define UpgradeCode="9209D29E-C87F-4D88-82E7-B20B8E974BE0" ?>-->  <!--v1.1.2.11-->
   <!--<?define UpgradeCode="1EEF7B40-479B-40A6-B069-0AD37F083A14" ?>-->  <!--v1.1.2.12-->
   <!--<?define UpgradeCode="8D6F5217-0628-4B54-80E7-87A71B7F1768" ?>-->  <!--v1.1.2.13-->
-  <?define UpgradeCode="42B4B41C-345F-4787-92C6-314B52FF7416" ?>  <!--v1.1.2.14-->
+  <!--<?define UpgradeCode="42B4B41C-345F-4787-92C6-314B52FF7416" ?>-->  <!--v1.1.2.14-->
+  <?define UpgradeCode="BC8C08B4-AB6A-479F-B649-C01382A7C89B" ?>  <!--v1.1.2.15-->
 
-  <Package Name="!(loc.ApplicationName)" Language="!(loc.Language)" Version="1.1.2.14" Manufacturer="!(loc.ManufacturerFullName)" UpgradeCode="$(var.UpgradeCode)" InstallerVersion="200" ProductCode="35CE40BF-2F47-409E-BA49-4757F6A3F1DA"><SummaryInformation Description="!(loc.ProductDescription)" />
+  <Package Name="!(loc.ApplicationName)" Language="!(loc.Language)" Version="1.1.2.15" Manufacturer="!(loc.ManufacturerFullName)" UpgradeCode="$(var.UpgradeCode)" InstallerVersion="200" ProductCode="35CE40BF-2F47-409E-BA49-4757F6A3F1DA"><SummaryInformation Description="!(loc.ProductDescription)" />
 
     <!--<WixVariable Id="WixUILicenseRtf" Value="!(loc.LicenseRtf)" />-->
 
@@ -161,6 +162,7 @@
         <Directory Id="NetCore8RuntimesWinx64NativeDir" Name="runtimes\win-x64\native">
           <Component Id="NetCore8RuntimesWinx64Native" Guid="C72424F4-653F-4307-8CD3-895A839E19C0" KeyPath="yes">
             <File Id="e_sqlite3.dll" Source="..\CrudGenerator.App.Wpf\bin\Release\net8.0-windows\runtimes\win-x64\native\e_sqlite3.dll" />
+            <File Id="Microsoft.Data.SqlClient.SNI.dll" Source="..\CrudGenerator.App.Wpf\bin\Release\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
           </Component>
         </Directory>
 
@@ -204,6 +206,7 @@
           <File Id="System.Diagnostics.EventLog" Source="..\CrudGenerator.App.Wpf\bin\Release\net8.0-windows\System.Diagnostics.EventLog.dll" />
           <File Id="System.Drawing.Common" Source="..\CrudGenerator.App.Wpf\bin\Release\net8.0-windows\System.Drawing.Common.dll" />
           <File Id="System.IdentityModel.Tokens.Jwt" Source="..\CrudGenerator.App.Wpf\bin\Release\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll" />
+          <File Id="System.IO.Pipelines" Source="..\CrudGenerator.App.Wpf\bin\Release\net8.0-windows\System.IO.Pipelines.dll" />
           <File Id="System.Memory.Data" Source="..\CrudGenerator.App.Wpf\bin\Release\net8.0-windows\System.Memory.Data.dll" />
           <File Id="System.Reactive" Source="..\CrudGenerator.App.Wpf\bin\Release\net8.0-windows\System.Reactive.dll" />
           <File Id="System.Security.Cryptography.Pkcs" Source="..\CrudGenerator.App.Wpf\bin\Release\net8.0-windows\System.Security.Cryptography.Pkcs.dll" />

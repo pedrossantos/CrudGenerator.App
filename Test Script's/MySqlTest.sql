@@ -1,6 +1,6 @@
-CREATE DATABASE TesteDatabaseLocal;
+CREATE DATABASE TesteCrudGenerator;
 
-USE TesteDatabaseLocal;
+USE TesteCrudGenerator;
 DROP TABLE IF EXISTS Funcionario;
 DROP TABLE IF EXISTS Cargo;
 DROP TABLE IF EXISTS Empresa;
