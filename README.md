@@ -37,7 +37,7 @@ Já para o **Método 1**, apenas uma das opções do **Passo 2** é necessária 
  - **PostgreSQL**: 18.1
  - **SqlServer**: 17.0.1000.7
  - **Sqlite** (DB Browser for SQLite): 3.13.1
-   - Link para DB Browser for SQlite "*https://sqlitebrowser.org/*"
+   - Link para download do DB Browser for SQlite: *https://sqlitebrowser.org/*
 
 
 Obrigado!
