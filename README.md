@@ -32,10 +32,11 @@ Após instalar e realizar a geração de um projeto à partir do **CrudGenerator
 Ao utilizar o **Método 2**, pode ser necessário sempre realizar a execução à partir do **Passo 2**, caso já tenha realizado todo o **Método 2** ao menos uma vez.
 Já para o **Método 1**, apenas uma das opções do **Passo 2** é necessária caso já tenha realizado a execução do **Passo 1** correspondente.
 
-**Versões das Bases de Dados**
+**Versões das Bases de Dados utilizadas para testes:**
  - MySQL: 8.0.45
  - PostgreSQL: 18.1
  - SqlServer: 17.0.1000.7
  - Sqlite (DB Browser for SQLite): 3.13.1 (link para DB Browser for SQlite "*https://sqlitebrowser.org/*")
+
 
 Obrigado!
