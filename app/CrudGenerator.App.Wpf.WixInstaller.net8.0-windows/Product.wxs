@@ -26,9 +26,10 @@
   <!--<?define UpgradeCode="8D6F5217-0628-4B54-80E7-87A71B7F1768" ?>-->  <!--v1.1.2.13-->
   <!--<?define UpgradeCode="42B4B41C-345F-4787-92C6-314B52FF7416" ?>-->  <!--v1.1.2.14-->
   <!--<?define UpgradeCode="BC8C08B4-AB6A-479F-B649-C01382A7C89B" ?>-->  <!--v1.1.2.15-->
-  <?define UpgradeCode="79BFBC1C-9BD8-42D0-B5A0-D8852E84831E" ?>  <!--v1.1.2.16-->
+  <!--<?define UpgradeCode="79BFBC1C-9BD8-42D0-B5A0-D8852E84831E" ?>-->  <!--v1.1.2.16-->
+  <?define UpgradeCode="234C30FE-7845-4519-BD2B-1EE400E229D5" ?>  <!--v1.1.2.17-->
 
-  <Package Name="!(loc.ApplicationName)" Language="!(loc.Language)" Version="1.1.2.16" Manufacturer="!(loc.ManufacturerFullName)" UpgradeCode="$(var.UpgradeCode)" InstallerVersion="200" ProductCode="35CE40BF-2F47-409E-BA49-4757F6A3F1DA"><SummaryInformation Description="!(loc.ProductDescription)" />
+  <Package Name="!(loc.ApplicationName)" Language="!(loc.Language)" Version="1.1.2.17" Manufacturer="!(loc.ManufacturerFullName)" UpgradeCode="$(var.UpgradeCode)" InstallerVersion="200" ProductCode="35CE40BF-2F47-409E-BA49-4757F6A3F1DA"><SummaryInformation Description="!(loc.ProductDescription)" />
 
     <!--<WixVariable Id="WixUILicenseRtf" Value="!(loc.LicenseRtf)" />-->
 
