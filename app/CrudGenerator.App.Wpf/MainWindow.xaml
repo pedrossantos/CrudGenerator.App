@@ -35,12 +35,12 @@
             <TabItem Header="{x:Static messages:Messages.GeneratedCSharpClasses}" IsEnabled="{Binding Path=SchemaInformationGenetatorViewModel.SchemaInformation.SchemaTableMappingsObservableCollection.Count, Mode=OneWay, ElementName=mainWindow}">
                 <crudGeneratorComponents:ProjectGeneratorControl
                     Padding="0"
+                    GeneralDatabaseConfigurationViewModel="{Binding Path=GeneralDatabaseConfigurationViewModel, ElementName=mainWindow, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
                     GenerateClassesFinalized="ProjectGeneratorControl_GenerateClassesFinalized"
                     GenerateClassesInitialized="ProjectGeneratorControl_GenerateClassesInitialized"
                     GenerateProjectFinalized="ProjectGeneratorControlGenerateProjectFinalized"
                     GenerateProjectInitialized="ProjectGeneratorControlGenerateProjectInitialized"
-                    ProjectGeneratorViewModel="{Binding Path=ProjectGeneratorViewModel, ElementName=mainWindow, UpdateSourceTrigger=PropertyChanged}"
-                    SelectedDatabaseType="{Binding Path=GeneralDatabaseConfigurationViewModel.SelectedDatabaseType, ElementName=mainWindow, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    ProjectGeneratorViewModel="{Binding Path=ProjectGeneratorViewModel, ElementName=mainWindow, UpdateSourceTrigger=PropertyChanged}" />
             </TabItem>
         </TabControl>
     </adornerControls:AdornedControl>

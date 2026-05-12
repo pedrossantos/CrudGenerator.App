@@ -2,20 +2,10 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFrameworks>net461;net462;net8.0-windows;net9.0-windows</TargetFrameworks>
+    <TargetFrameworks>net462;net8.0-windows;net9.0-windows</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
-    <PackageReference Include="System.Collections.Immutable" Version="6.0.0" />
-    <PackageReference Include="Npgsql" Version="6.0.13" />
-    <PackageReference Include="MySql.Data" Version="8.0.32.1" />
-    <PackageReference Include="System.Text.Json" Version="8.0.6" />
-    <PackageReference Include="BouncyCastle.Cryptography" Version="2.3.1" />
-    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
-  </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
@@ -44,6 +34,8 @@
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\Domain\Serialization\src\Serialization.BinarySlim\Serialization.BinarySlim.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\Domain\Serialization\src\Serialization.Json\Serialization.Json.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\Domain\src\Domain.Infrastructure\Domain.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\Database\src\View.Database.Wpf\View.Database.Wpf.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\Database\src\View.Database\View.Database.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Aero\Xceed.Wpf.AvalonDock.Themes.Aero.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Expression\Xceed.Wpf.AvalonDock.Themes.Expression.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Metro\Xceed.Wpf.AvalonDock.Themes.Metro.csproj" />

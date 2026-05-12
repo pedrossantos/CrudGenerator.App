@@ -14,9 +14,9 @@ namespace CrudGenerator.App.Wpf.DependencyInversion
 
         private static IEnumerable<IContainerBuilder> GetBuilders()
         {
-            yield return new ViewDatabaseWpfContainerBuilder();
             yield return new CrudGeneratorCoreContainerBuilder();
             yield return new CrudGeneratorContainterRegistrations();
+            yield return new ViewDatabaseWpfContainerBuilder();
             yield return new WpfViewContainerBuilder();
         }
     }
