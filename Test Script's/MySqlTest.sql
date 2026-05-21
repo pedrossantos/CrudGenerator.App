@@ -90,16 +90,3 @@ CREATE TABLE Funcionario
 		REFERENCES Cargo(id, idEmpresa)
 		ON UPDATE CASCADE
 );
-
-INSERT INTO Empresa(nome, email) VALUES('Empresa Teste1', 'email@empresateste1.com.br');
-INSERT INTO Empresa(nome, email) VALUES('Empresa Teste2', 'email@empresateste1.com.br');
-
-INSERT INTO Cargo(id, idEmpresa, descricao) VALUES(1, 1, 'Cargo Empresa 1');
-INSERT INTO Cargo(id, idEmpresa, descricao) VALUES(1, 2, 'Cargo Empresa 2');
-
-INSERT INTO Funcionario(nome, email, idCargo, idEmpresa) VALUES('Funcionario 1', 'funcionario1@empresateste1.com.br', 1, 1);
-INSERT INTO Funcionario(nome, idCargo, idEmpresa) VALUES('Funcionario 2', 1, 2);
-
-SELECT * FROM Empresa;
-SELECT * FROM Cargo	;
-SELECT * FROM Funcionario;

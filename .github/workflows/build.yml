@@ -22,17 +22,17 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v4 # Action to check out your repository code
+    - uses: actions/checkout@v6 # Action to check out your repository code
       with:
         submodules: 'recursive'
         fetch-depth: 0 # Fetch all history
         token: ${{ secrets.BUILD }}
      
     - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1.1
+      uses: microsoft/setup-msbuild@v2
       
     - name: Setup NuGet
-      uses: NuGet/setup-nuget@v2
+      uses: NuGet/setup-nuget@v3
 
     - name: Build CrudGenerator.App.Wpf net462/WixInstaller.net462
       run: |

@@ -1,3 +1,6 @@
+DROP TABLE IF EXISTS idgen_byte;
+DROP TABLE IF EXISTS idgen_int32;
+DROP TABLE IF EXISTS idgen_int64;
 DROP TABLE IF EXISTS Funcionario;
 DROP TABLE IF EXISTS Cargo;
 DROP TABLE IF EXISTS Empresa;
@@ -47,16 +50,3 @@ CREATE TABLE Funcionario
 		REFERENCES Cargo(id, idEmpresa)
 		ON UPDATE CASCADE
 );
-
-INSERT INTO Empresa(nome, email) VALUES('Empresa Teste1', 'email@empresateste1.com.br');
-INSERT INTO Empresa(nome, email) VALUES('Empresa Teste2', 'email@empresateste1.com.br');
-
-INSERT INTO Cargo(id, idEmpresa, descricao) VALUES(1, 1, 'Cargo Empresa 1');
-INSERT INTO Cargo(id, idEmpresa, descricao) VALUES(1, 2, 'Cargo Empresa 2');
-
-INSERT INTO Funcionario(id, idCargo, idEmpresa, nome, email) VALUES(1, 1, 1, 'Funcionario 1', 'funcionario1@empresateste1.com.br');
-INSERT INTO Funcionario(id, idCargo, idEmpresa, nome) VALUES(1, 1, 2, 'Funcionario 2');
-
-SELECT * FROM Empresa;
-SELECT * FROM Cargo	;
-SELECT * FROM Funcionario;
