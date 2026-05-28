@@ -14,6 +14,7 @@
     <protection id="rename" action="remove" />
 	<protection id="watermark" />
   </rule>
+  <module path="ConnectionInfoEncryptor.Wpf.exe" />
   <module path="CrudGenerator.App.Wpf.exe" />
   <module path="CrudGenerator.Core.Wpf.dll" />
   <module path="CrudGenerator.Core.dll" />

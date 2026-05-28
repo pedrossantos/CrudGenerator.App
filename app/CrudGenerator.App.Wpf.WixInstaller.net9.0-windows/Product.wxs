@@ -210,9 +210,11 @@
           <File Id="ZstdSharp" Source="..\CrudGenerator.App.Wpf\bin\Release\net9.0-windows\ZstdSharp.dll" />
 
           <File Id="CrudGenerator.App.Wpf.deps.json" Source="..\CrudGenerator.App.Wpf\bin\Release\net9.0-windows\CrudGenerator.App.Wpf.deps.json" />
+          <File Id="ConnectionInfoEncryptor.Wpf.exe" Source="..\CrudGenerator.App.Wpf\bin\Release\net9.0-windows\ConnectionInfoEncryptor.Wpf.exe" />
           <File Id="CrudGenerator.App.Wpf.exe" Source="..\CrudGenerator.App.Wpf\bin\Release\net9.0-windows\CrudGenerator.App.Wpf.exe" />
           <File Id="CrudGenerator.App.Wpf.runtimeconfig.json" Source="..\CrudGenerator.App.Wpf\bin\Release\net9.0-windows\CrudGenerator.App.Wpf.runtimeconfig.json" />
 
+          <File Id="ConnectionInfoEncryptor.Wpf.dll" Source="..\CrudGenerator.App.Wpf\bin\Release\net9.0-windows\Confused\ConnectionInfoEncryptor.Wpf.dll" />
           <File Id="CrudGenerator.App.Wpf.dll" Source="..\CrudGenerator.App.Wpf\bin\Release\net9.0-windows\Confused\CrudGenerator.App.Wpf.dll" />
           <File Id="CrudGenerator.Core.Wpf" Source="..\CrudGenerator.App.Wpf\bin\Release\net9.0-windows\Confused\CrudGenerator.Core.Wpf.dll" />
           <File Id="CrudGenerator.Core" Source="..\CrudGenerator.App.Wpf\bin\Release\net9.0-windows\Confused\CrudGenerator.Core.dll" />

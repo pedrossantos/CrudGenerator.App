@@ -34,6 +34,7 @@
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\Domain\Serialization\src\Serialization.BinarySlim\Serialization.BinarySlim.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\Domain\Serialization\src\Serialization.Json\Serialization.Json.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\Domain\src\Domain.Infrastructure\Domain.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\Database\app\Wpf\ConnectionInfoEncryptor.Wpf.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\Database\src\View.Database.Wpf\View.Database.Wpf.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\Database\src\View.Database\View.Database.csproj" />
     <ProjectReference Include="..\..\CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Aero\Xceed.Wpf.AvalonDock.Themes.Aero.csproj" />

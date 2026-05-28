@@ -302,6 +302,7 @@
 
           <File Id="CrudGenerator.App.Wpf.config" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\CrudGenerator.App.Wpf.exe.config" />
 
+          <File Id="ConnectionInfoEncryptor.Wpf" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Confused\ConnectionInfoEncryptor.Wpf.exe" />
           <File Id="CrudGenerator.App.Wpf" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Confused\CrudGenerator.App.Wpf.exe" />
           <File Id="CrudGenerator.Core.Wpf" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Confused\CrudGenerator.Core.Wpf.dll" />
           <File Id="CrudGenerator.Core" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Confused\CrudGenerator.Core.dll" />

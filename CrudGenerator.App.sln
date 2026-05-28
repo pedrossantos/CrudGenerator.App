@@ -122,6 +122,8 @@ Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "CrudGenerator.App.Wpf.WixIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xceed.Wpf.AvalonDock.Themes.Expression", "CrudGenerator\SubModules\Crud\SubModules\View\SubModules\xceed-wpf\src\Xceed.Wpf.AvalonDock.Themes.Expression\Xceed.Wpf.AvalonDock.Themes.Expression.csproj", "{E80FC086-E722-2F3D-D701-7D24E218F65F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionInfoEncryptor.Wpf", "CrudGenerator\SubModules\Crud\SubModules\View\Database\app\Wpf\ConnectionInfoEncryptor.Wpf.csproj", "{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -931,6 +933,22 @@ Global
 		{E80FC086-E722-2F3D-D701-7D24E218F65F}.Release|x64.Build.0 = Release|Any CPU
 		{E80FC086-E722-2F3D-D701-7D24E218F65F}.Release|x86.ActiveCfg = Release|Any CPU
 		{E80FC086-E722-2F3D-D701-7D24E218F65F}.Release|x86.Build.0 = Release|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Debug|x64.Build.0 = Debug|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Debug|x86.Build.0 = Debug|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Release|ARM64.Build.0 = Release|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Release|x64.ActiveCfg = Release|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Release|x64.Build.0 = Release|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Release|x86.ActiveCfg = Release|Any CPU
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -994,6 +1012,7 @@ Global
 		{DB126B78-6346-4DF4-9A56-6AB4A1C5CCF5} = {A215DB22-0E27-4375-9C69-D778C515EB50}
 		{31DED21D-4745-97CD-85CA-346A2B11CFE8} = {A215DB22-0E27-4375-9C69-D778C515EB50}
 		{E80FC086-E722-2F3D-D701-7D24E218F65F} = {5A307E2C-93FE-4A8F-8252-90BD6DB34511}
+		{9B85F83C-B9D4-D01B-C43D-4773C8AC796E} = {50482797-E14D-4B7F-BB6E-CC0D3D5B5187}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64FAF583-7900-44F0-8450-B0B15CE21677}
