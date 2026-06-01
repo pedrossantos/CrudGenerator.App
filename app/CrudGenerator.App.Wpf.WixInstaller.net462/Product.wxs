@@ -300,6 +300,7 @@
           <File Id="System.Xml.XPath.XDocument" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\System.Xml.XPath.XDocument.dll" />
           <File Id="ZstdSharp" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\ZstdSharp.dll" />
 
+          <File Id="ConnectionInfoEncryptor.Wpf.config" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\ConnectionInfoEncryptor.Wpf.exe.config" />
           <File Id="CrudGenerator.App.Wpf.config" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\CrudGenerator.App.Wpf.exe.config" />
 
           <File Id="ConnectionInfoEncryptor.Wpf" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Confused\ConnectionInfoEncryptor.Wpf.exe" />
