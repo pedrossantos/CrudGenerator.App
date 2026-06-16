@@ -38,6 +38,12 @@ Já para o **Método 1**, apenas uma das opções do **Passo 2** é necessária 
  - **SqlServer**: 17.0.1000.7
  - **Sqlite** (DB Browser for SQLite): 3.13.1
    - Link para download do DB Browser for SQlite: *https://sqlitebrowser.org/*
+   
+## Considerações Finais
 
+**CrudGenerator** foi desenvolvido para ser utilizado junto a bancos de dados, normalizados. Isto é, a estrutura de banco de dados deve seguir as ***3 Formas Normais*** propostas por **Edgar Frank Codd**.
+ - Primeira Forma Normal (1FN): cada tabela deve conter valores atômicos, o que significa que cada célula da tabela deve possuir apenas um valor único e indivisível. Não é permitido ter listas ou vários valores separados por vírgula em uma mesma coluna.
+ - Segunda Forma Normal (2FN): a tabela deve estar na 1FN. Além disso, todos os atributos que não são a chave primária devem depender de toda a chave primária e não apenas de uma parte dela.
+ - Terceira Forma Normal (3FN): a tabela precisa estar na 2FN. Além disso, nenhum atributo que não seja chave primária pode depender de outro atributo que também não seja chave primária. Todos os dados devem depender diretamente da chave primária.
 
 Obrigado!
