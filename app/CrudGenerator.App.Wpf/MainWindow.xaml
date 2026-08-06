@@ -32,7 +32,7 @@
                     SelectedDatabaseType="{Binding Path=GeneralDatabaseConfigurationViewModel.SelectedDatabaseType, ElementName=mainWindow, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             </TabItem>
 
-            <TabItem Header="{x:Static messages:Messages.GeneratedCSharpClasses}" IsEnabled="{Binding Path=SchemaInformationGenetatorViewModel.SchemaInformation.SchemaTableMappingsObservableCollection.Count, Mode=OneWay, ElementName=mainWindow}">
+            <TabItem Header="{x:Static messages:Messages.GeneratedCSharpClasses}" IsEnabled="{Binding Path=SchemaInformationGenetatorViewModel.SchemaInformation.HasSchemaTableMappings, Mode=OneWay, ElementName=mainWindow}">
                 <crudGeneratorComponents:ProjectGeneratorControl
                     Padding="0"
                     GeneralDatabaseConfigurationViewModel="{Binding Path=GeneralDatabaseConfigurationViewModel, ElementName=mainWindow, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
