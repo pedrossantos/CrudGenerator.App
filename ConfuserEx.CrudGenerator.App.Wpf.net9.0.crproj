@@ -15,6 +15,7 @@
 	<protection id="watermark" />
   </rule>
   <module path="ConnectionInfoEncryptor.Wpf.dll" />
+  <module path="SendEmailInfoEncryptor.Wpf.dll" />
   <module path="CrudGenerator.App.Wpf.dll" />
   <module path="CrudGenerator.Core.Wpf.dll" />
   <module path="CrudGenerator.Core.dll" />

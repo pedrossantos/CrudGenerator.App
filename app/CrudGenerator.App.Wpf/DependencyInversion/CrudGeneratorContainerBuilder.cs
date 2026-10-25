@@ -1,5 +1,7 @@
 ﻿using CrudGenerator.Core.DependencyInversion;
 using DependencyInversion;
+using Serialization.BinarySlim.DependencyInversion;
+using View.Abstractions.DependencyInversion;
 using View.Abstractions.Wpf.DependencyInversion;
 using View.Database.Wpf.DependencyInversion;
 
@@ -14,9 +16,10 @@ namespace CrudGenerator.App.Wpf.DependencyInversion
 
         private static IEnumerable<IContainerBuilder> GetBuilders()
         {
+            yield return new ViewAbstractionsContainerBuilder();
+            yield return new ViewDatabaseWpfContainerBuilder();
             yield return new CrudGeneratorCoreContainerBuilder();
             yield return new CrudGeneratorContainterRegistrations();
-            yield return new ViewDatabaseWpfContainerBuilder();
             yield return new WpfViewContainerBuilder();
         }
     }

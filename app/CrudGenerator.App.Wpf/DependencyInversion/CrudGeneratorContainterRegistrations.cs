@@ -10,6 +10,7 @@ using DependencyInversion;
 using Framework;
 using View.Abstractions.IO;
 using View.Abstractions.Wpf;
+
 #if NETSTANDARD2_0 || NETSTANDARD2_1 || NET461 || NET462
 using System.Data.SqlClient;
 #else

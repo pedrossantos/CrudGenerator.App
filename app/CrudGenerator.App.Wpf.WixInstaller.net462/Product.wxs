@@ -30,9 +30,10 @@
   <!--<?define UpgradeCode="234C30FE-7845-4519-BD2B-1EE400E229D5" ?>-->  <!--v1.1.2.17-->
   <!--<?define UpgradeCode="59354F10-FF4C-4CE4-8996-5958002063D8" ?>-->  <!--v1.1.2.18-->
   <!--<?define UpgradeCode="6D2459AD-9041-4B87-822F-57C8534EFD7A" ?>  --><!--v1.1.2.19-->
-  <?define UpgradeCode="CA7BA3EB-2518-4AD1-A59B-E0290215DB6B" ?>  <!--v1.1.2.20-->
+  <!--<?define UpgradeCode="CA7BA3EB-2518-4AD1-A59B-E0290215DB6B" ?>  --><!--v1.1.2.20-->
+  <?define UpgradeCode="55BAAA81-E67E-40AC-94DF-44B16FC882F5" ?>  <!--v1.1.2.21-->
 
-  <Package Name="!(loc.ApplicationName)" Language="!(loc.Language)" Version="1.1.2.20" Manufacturer="!(loc.ManufacturerFullName)" UpgradeCode="$(var.UpgradeCode)" InstallerVersion="200" ProductCode="35CE40BF-2F47-409E-BA49-4757F6A3F1DA">
+  <Package Name="!(loc.ApplicationName)" Language="!(loc.Language)" Version="1.1.2.21" Manufacturer="!(loc.ManufacturerFullName)" UpgradeCode="$(var.UpgradeCode)" InstallerVersion="200" ProductCode="35CE40BF-2F47-409E-BA49-4757F6A3F1DA">
     <SummaryInformation Description="!(loc.ProductDescription)" />
 
     <!--<WixVariable Id="WixUILicenseRtf" Value="!(loc.LicenseRtf)" />-->
@@ -123,9 +124,11 @@
 
         <Directory Id="LanguageESARDir" Name="es-AR">
           <Component Id="LanguageESAR" Guid="C28CD35B-B3B9-4EC4-8FBE-B4EA39A3091C" KeyPath="yes">
+            <File Id="ConnectionInfoEncryptor.Wpf.resources.esAR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\es-AR\ConnectionInfoEncryptor.Wpf.resources.dll" />
             <File Id="Crud.Abstractions.Presentation.resources.esAR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\es-AR\Crud.Abstractions.Presentation.resources.dll" />
             <File Id="Crud.Abstractions.Presentation.Wpf.Components.resources.esAR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\es-AR\Crud.Abstractions.Presentation.Wpf.Components.resources.dll" />
             <File Id="Crud.Abstractions.Presentation.Wpf.Views.resources.esAR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\es-AR\Crud.Abstractions.Presentation.Wpf.Views.resources.dll" />
+            <File Id="SendEmailInfoEncryptor.Wpf.resources.esAR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\es-AR\SendEmailInfoEncryptor.Wpf.resources.dll" />
             <File Id="View.Abstractions.resources.esAR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\es-AR\View.Abstractions.resources.dll" />
             <File Id="View.Components.Wpf.resources.esAR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\es-AR\View.Components.Wpf.resources.dll" />
           </Component>
@@ -150,10 +153,12 @@
 
         <Directory Id="LanguagePTBRDir" Name="pt-BR">
           <Component Id="LanguagePTBR" Guid="994D6618-4911-452C-9130-DF7CEDF1FA29" KeyPath="yes">
+            <File Id="ConnectionInfoEncryptor.Wpf.resources.ptBR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\pt-BR\ConnectionInfoEncryptor.Wpf.resources.dll" />
             <File Id="Crud.Abstractions.Presentation.resources.ptBR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\pt-BR\Crud.Abstractions.Presentation.resources.dll" />
             <File Id="Crud.Abstractions.Presentation.Wpf.Components.resources.ptBR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\pt-BR\Crud.Abstractions.Presentation.Wpf.Components.resources.dll" />
             <File Id="Crud.Abstractions.Presentation.Wpf.Views.resources.ptBR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\pt-BR\Crud.Abstractions.Presentation.Wpf.Views.resources.dll" />
             <File Id="DependencyInversion.resources.ptBR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\pt-BR\DependencyInversion.resources.dll" />
+            <File Id="SendEmailInfoEncryptor.Wpf.resources.ptBR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\pt-BR\SendEmailInfoEncryptor.Wpf.resources.dll" />
             <File Id="View.Abstractions.resources.ptBR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\pt-BR\View.Abstractions.resources.dll" />
             <File Id="View.Components.Wpf.resources.ptBR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\pt-BR\View.Components.Wpf.resources.dll" />
             <File Id="Xceed.Wpf.AvalonDock.resources.ptBR" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\pt-BR\Xceed.Wpf.AvalonDock.resources.dll" />
@@ -301,9 +306,11 @@
           <File Id="ZstdSharp" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\ZstdSharp.dll" />
 
           <File Id="ConnectionInfoEncryptor.Wpf.config" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\ConnectionInfoEncryptor.Wpf.exe.config" />
+          <File Id="SendEmailInfoEncryptor.Wpf.config" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\SendEmailInfoEncryptor.Wpf.exe.config" />
           <File Id="CrudGenerator.App.Wpf.config" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\CrudGenerator.App.Wpf.exe.config" />
 
           <File Id="ConnectionInfoEncryptor.Wpf" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Confused\ConnectionInfoEncryptor.Wpf.exe" />
+          <File Id="SendEmailInfoEncryptor.Wpf" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Confused\SendEmailInfoEncryptor.Wpf.exe" />
           <File Id="CrudGenerator.App.Wpf" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Confused\CrudGenerator.App.Wpf.exe" />
           <File Id="CrudGenerator.Core.Wpf" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Confused\CrudGenerator.Core.Wpf.dll" />
           <File Id="CrudGenerator.Core" Source="..\CrudGenerator.App.Wpf\bin\Release\net462\Confused\CrudGenerator.Core.dll" />
